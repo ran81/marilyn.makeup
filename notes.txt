@@ -1,0 +1,3 @@
+Speedup for slow networks?
+--------------------------
+<img src="images/0310_18-min.webp" alt="banner" class="banner-image with-shadow first-img" onload="document.getElementsByClassName('preloader')[0].style.display = 'none';">

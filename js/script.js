@@ -70,15 +70,6 @@
     }
   };
 
-  // init jarallax parallax
-  var initJarallax = function () {
-    jarallax(document.querySelectorAll(".jarallax"));
-
-    jarallax(document.querySelectorAll(".jarallax-keep-img"), {
-      keepImg: true,
-    });
-  }
-
   // init Chocolat light box
   var initChocolat = function () {
     Chocolat(document.querySelectorAll('.image-link'), {
@@ -130,28 +121,12 @@
     initHamburgerMenu();
     initSliders();
     initChocolat();
-    initJarallax();
   });
 
   AOS.init({
     duration: 1200,
     once: true,
   })
-
-  jQuery('.stellarnav').stellarNav({
-    theme: 'plain',
-    closingDelay: 250,
-    mobileMode: false,
-  });
-
-  $(".btn-search").click(function () {
-    $(".search-box").toggleClass('active');
-    $(".search-box .search-input").focus();
-  });
-
-  $(".close-button").click(function () {
-    $(".search-box").toggleClass('active');
-  });
 
   // window load
   $(window).load(function () {

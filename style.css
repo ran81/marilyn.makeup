@@ -1531,6 +1531,7 @@ blockquote cite {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 300ms ease-out;
 }
 .preloader:last-child {
   margin-right: 0;
@@ -1545,7 +1546,7 @@ blockquote cite {
 }
 
 @keyframes loadingInner {
-  0 {
+  0% {
     transform: translate(0, 0);
   }
   50% {
@@ -1582,33 +1583,14 @@ blockquote cite {
   }
 }
 
-/* search box */
-.search-box {
-  position: relative;
-  background: var(--dark-color);
-  width: 100%;
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.3s ease-out;
-}
-.search-box.active {
-  height: 140px;
-}
-.search-box #search-form {
-  margin: 0;
-}
-.search-box .icon-search {
-  margin-left: -60px;
-}
-.close-button {
-  position: absolute;
-  top: 40px;
-  right: 60px;
-  color: aliceblue;
-  cursor: pointer;
-}
 /* - Main Navigation
 ------------------------------------------------------------- */
+#header {
+  box-shadow: 0px 6px 3px -6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
 #header .container {
   width: 98%;
 }
@@ -1710,7 +1692,6 @@ header .hamburger .bar {
   }
   header .hamburger {
     display: block;
-    background: #f8f6f1;
     padding: 10px;
     cursor: pointer;
   }
@@ -1725,13 +1706,6 @@ header .hamburger .bar {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
-
-/* - Search Form
-------------------------------------------------------------- */
-#header .search-button {
-  order: 1;
-  color: #490179;
 }
 
 /*----- Billboard
@@ -1845,22 +1819,6 @@ header .hamburger .bar {
   }
 }
 
-/*----- Brand Collection Section
---------------------------------------------------------------*/
-#brand-collection {
-  border-bottom: 1px solid #e5e7dd;
-  margin-bottom: 160px;
-}
-#brand-collection .brand-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-#brand-collection img {
-  object-fit: contain;
-  margin: 14px;
-}
-
 /*----- About Me Section
 --------------------------------------------------------------*/
 
@@ -1908,8 +1866,10 @@ header .hamburger .bar {
   border-right: 1px solid #e0e2d8;
   opacity: 0.4;
   transition: opacity 0.3s ease-out;
+  color: var(--body-text-color);
 }
 #services ul.tabs li.active {
+  color: var(--accent-color);
   opacity: 1;
 }
 #services ul.tabs li:last-child {
@@ -1925,6 +1885,13 @@ header .hamburger .bar {
 #portfolio .portfolio-content {
   margin-top: 80px;
 }
+
+@media screen and (width < 1000px) {
+  #portfolio .portfolio-content {
+    margin-top: 50px;
+  }
+}
+
 #portfolio .portfolio-content .portfolio-item {
   margin-bottom: 50px;
 }
@@ -1990,80 +1957,6 @@ header .hamburger .bar {
   opacity: 1;
 }
 
-/*----- Newsletter Section
---------------------------------------------------------------*/
-#subscribe .subscribe-content {
-  margin-top: 50px;
-  margin-left: 80px;
-}
-
-#subscribe form {
-  width: 80%;
-}
-
-@media screen and (width < 1200px) {
-  #subscribe .subscribe-content {
-    margin-top: 50px;
-    margin-left: 0;
-  }
-  #subscribe form {
-    width: 100%;
-  }
-}
-
-#subscribe textarea {
-  width: 100%;
-  resize: none;
-  background: transparent;
-  border: 1px solid #b5c3be;
-  font-style: italic;
-  padding-left: 15px;
-}
-#subscribe input[type="text"] {
-  width: 100%;
-  height: 60px;
-  background: transparent;
-  border: 1px solid #b5c3be;
-  font-style: italic;
-  padding-left: 15px;
-}
-#subscribe button.btn-subscribe {
-  height: 60px;
-  margin: 0;
-}
-#subscribe button.btn-subscribe:hover {
-  background: var(--secondary-color);
-}
-
-@media only screen and (max-width: 600px) {
-  #subscribe form#form {
-    flex-wrap: wrap;
-  }
-  #subscribe button.btn-subscribe {
-    width: 100%;
-  }
-}
-
-/*----- Articles Section
---------------------------------------------------------------*/
-#latest-blog {
-  position: relative;
-}
-#latest-blog .post-grid {
-  margin-top: 80px;
-}
-#latest-blog .image-holder {
-  margin-bottom: 20px;
-}
-#latest-blog .post-item {
-  padding-left: 20px;
-  margin-bottom: 50px;
-}
-.post-item h3.post-title {
-  font-weight: 500;
-  margin: 0;
-}
-
 /*----- Contact Section
 --------------------------------------------------------------*/
 #contact p {
@@ -2110,10 +2003,6 @@ header .hamburger .bar {
 #footer-bottom p {
   margin: 0;
 }
-#footer-bottom .social-links li {
-  margin-right: 30px;
-  list-style: none;
-}
 
 @media only screen and (max-width: 991px) {
   #footer-bottom p {
@@ -2123,74 +2012,6 @@ header .hamburger .bar {
     justify-content: center;
   }
 }
-
-/*--------------------------------------------------------------
-/**  About Us Page
---------------------------------------------------------------*/
-
-/*-- Feature Icon 
-----------------*/
-#interiors-features .features-item {
-  text-align: center;
-  margin-bottom: 40px;
-}
-#interiors-features .features-item i.icon {
-  font-size: 3em;
-  color: #ebb017;
-}
-#interiors-features .features-item h3.feature-title {
-  font-size: 1.2em;
-  line-height: 1.4;
-}
-
-/*-- Team Member 
-----------------*/
-.team-member .member-details {
-  margin-top: 20px;
-}
-.member-details h4.member-title {
-  margin: 0;
-}
-.member-slider .slick-dots {
-  bottom: -80px;
-}
-.our-team .team-member {
-  margin-right: 20px;
-}
-
-/*--------------------------------------------------------------
-/**  Contact Us Page
---------------------------------------------------------------*/
-.contact-page .contact-detail {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.contact-page .contact-detail .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.contact-page .contact-detail .icon > img {
-  width: 50%;
-}
-.contact-page .contact-detail .detail-item {
-  margin-left: 20px;
-}
-.contact-page .detail-item h4.icon-title {
-  margin: 0;
-}
-.contact-page .detail-item p {
-  margin: 0;
-}
-
-/*--------------------------------------------------------------
-/** . THIRD PARTY COMPONENTS
---------------------------------------------------------------*/
 
 /* - Triangle Shape
 ------------------------------------------------------------- */
@@ -2248,4 +2069,9 @@ header .hamburger .bar {
 
 .container {
   overflow: hidden;
+  padding: 0 50px;
+}
+
+.less-padding {
+  padding: 0 20px;
 }
