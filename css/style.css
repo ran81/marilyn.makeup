@@ -1,96 +1,3 @@
-/*
-Theme Name: Interiors
-Theme URI: https://templatesjungle.com/
-Author: TemplatesJungle
-Author URI: https://templatesJungle.com/
-Description: Interiors is specially designed product packaged for Interior designer website.
-Version: 1.1
-*/
-
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-
-/*------------------------------------*\
-    Table of contents
-\*------------------------------------*/
-
-/*------------------------------------------------
-
-CSS STRUCTURE:
-
-1. VARIABLES
-
-2. GENERAL TYPOGRAPHY
-  2.1 General Styles
-  2.2 Floating & Alignment
-  2.3 Forms
-  2.4 Lists
-  2.5 Code
-  2.6 Tables
-  2.7 Spacing
-  2.8 Utilities
-  2.9 Misc
-  2.10 Buttons
-    - Button Sizes
-    - Button Shapes
-    - Button Color Scheme
-    - Button Aligns
-  2.11 Images
-    - Image Hover Effects
-  2.12 Section
-    - Hero Section
-    - Section Title
-    - Section Paddings
-    - Section Margins
-    - Section Bg Colors
-    - Content colors
-
-
-3. EXTENDED TYPOGRAPHY
-  3.1 Blockquote / Pullquote
-  3.2 Dropcap
-  3.3 Text Highlights
-
-4. CONTENT ELEMENTS
-  4.1 Tabs
-  4.2 Accordions
-  4.3 Member Grid
-  4.4 Product Grid
-
-5. BLOG STYLES
-  5.1 Blog Single Post
-  5.2 About Author
-  5.3 Comments List
-  5.4 Comments Form
-
-6. Grid Layout
-
-6. SITE STRUCTURE
-  6.1 Preloader
-  6.2 Header
-    - Logo
-    - Header Menu
-    - Nav Sidebar
-  6.3 Billboard
-  6.4 About Me Section
-  6.5 Portfolio Section
-  6.6 Quotation Section
-  6.7 Achievement Section
-  6.8 Post Grid Section
-  6.9 Testimonials Section
-  6.10 Footer
-    - Footer Top
-    - Footer Bottom
-  
-
-7. THIRD PARTY COMPONENTS
-  7.1 parallax section
-  7.2 Blog Page
-  7.3 Page Navigation
-
-
-
 /*--------------------------------------------------------------
 /** 1. VARIABLES
 --------------------------------------------------------------*/
@@ -1854,7 +1761,7 @@ header .hamburger .bar {
 #services ul.tabs {
   display: flex;
   justify-content: space-between;
-  padding: 35px 30px;
+  padding: 35px 20px;
   list-style-type: decimal-leading-zero;
 }
 #services ul.tabs li {
