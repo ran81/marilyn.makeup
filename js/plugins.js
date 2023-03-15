@@ -5,7 +5,6 @@
 - jQuery UI
 - Slick Slider
 - HC-Sticky
-- Scroll Spy
 - Bootstrap
 - Menu on scroll
 */

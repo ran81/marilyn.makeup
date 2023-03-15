@@ -17,13 +17,6 @@
 }
 /* Theme Colors */
 
-/* CSS HEX */
-/* --french-violet: #8602deff;
---salmon-pink: #f59ca9ff;
---light-coral: #f6828cff;
---dark-purple: #371e30ff;
---cosmic-latte: #f7f3e3ff; */
-
 :root {
   --accent-color: #6e02b6;
   --secondary-color: #aea4bf;
@@ -99,20 +92,6 @@ ul li.active a {
 ul li:last-child,
 ol li:last-child {
   margin-bottom: 0;
-}
-dl {
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-dt,
-dd {
-  line-height: 1.42857143;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-left: 0;
 }
 button,
 input,
@@ -334,9 +313,9 @@ abbr {
   border: 0;
 }
 
-/*------------------------------------------------
-/* 2.3 Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+ * 2.3 Forms
+*/
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -403,9 +382,9 @@ label > .label-body {
   font-weight: normal;
 }
 
-/*------------------------------------------------
-/* 2.4 Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+* 2.4 Lists
+*/
 ul {
   list-style: circle inside;
 }
@@ -428,27 +407,9 @@ li {
   margin-bottom: 1rem;
 }
 
-/*------------------------------------------------
-/* 2.5 Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
-  padding: 0.2rem 0.5rem;
-  margin: 0 0.2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background-color: var(--background-color);
-  border: 1px solid var(--light-accent-color);
-  border-radius: 4px;
-}
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: normal;
-}
-
-/*------------------------------------------------
-/* 2.6 Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+* 2.6 Tables
+*/
 th,
 td {
   padding: 12px 15px;
@@ -464,9 +425,9 @@ td:last-child {
   padding-right: 0;
 }
 
-/*------------------------------------------------
-/* 2.7 Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+* 2.7 Spacing
+*/
 button,
 .button {
   margin-bottom: 1rem;
@@ -488,9 +449,9 @@ form {
   margin-bottom: 2.5rem;
 }
 
-/*------------------------------------------------
-/* 2.8 Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+* 2.8 Utilities
+*/
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
@@ -544,9 +505,9 @@ form {
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
-/*------------------------------------------------
-/* 2.9 Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+* 2.9 Misc
+*/
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -554,9 +515,9 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 
-/*--------------------------------------------------------------
-/** 2.10 Buttons
---------------------------------------------------------------*/
+/*
+* 2.10 Buttons
+*/
 a.btn,
 input[type="button"],
 input[type="submit"],
@@ -638,8 +599,7 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 
-/* - Button Sizes
-------------------------------------------------------------- */
+/* - Button Sizes */
 .btn.btn-small {
   padding: 0.325em 1.7em;
   font-size: 0.65em;
@@ -664,8 +624,7 @@ fieldset[disabled] a.btn {
   max-height: 50px;
 }
 
-/* - Button Shapes
-------------------------------------------------------------- */
+/* Button Shapes */
 .btn.btn-rounded,
 .btn.btn-rounded::after {
   border-radius: 4px;
@@ -744,8 +703,7 @@ fieldset[disabled] a.btn {
   right: -41px;
 }
 
-/* - Buttons Color Scheme
-------------------------------------------------------------- */
+/* - Buttons Color Scheme */
 .btn.btn-common {
   background: var(--accent-color);
   color: #fff;
@@ -780,8 +738,7 @@ fieldset[disabled] a.btn {
   padding-left: 10px;
 }
 
-/* - Buttons Aligns
-------------------------------------------------------------- */
+/* - Buttons Aligns */
 .btn-left {
   text-align: left;
   display: block;
@@ -795,12 +752,9 @@ fieldset[disabled] a.btn {
   display: block;
 }
 
-/*----------------------------------------------*/
 /* 2.11 Images */
-/*----------------------------------------------*/
 
-/*--- Image Dimension
------------------------------------------------*/
+/* Image Dimension */
 img.banner-image {
   width: 100%;
   height: 85vh;
@@ -824,24 +778,8 @@ img.subscribe-image {
   width: 100%;
   object-fit: cover;
 }
-img.post-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-img.commentor-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-img.member-image {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-}
 
-/*--- Image hover Effects
------------------------------------------------*/
+/* Image hover Effects */
 .image-hvr-effect {
   display: flex;
   overflow: hidden;
@@ -856,12 +794,9 @@ img.member-image {
   transform: scale(1);
 }
 
-/*----------------------------------------------*/
 /* 3. Section */
-/*-----------------------------------------------------------*/
 
-/* Hero section
-/*----------------------------------------------*/
+/* Hero section */
 .hero-section .hero-content {
   padding-top: 18em;
   padding-bottom: 10em;
@@ -902,8 +837,7 @@ img.member-image {
   }
 }
 
-/*--- Section Title
------------------------------------------------*/
+/* Section Title */
 .section-header {
   position: relative;
 }
@@ -940,8 +874,7 @@ h4.sub-title {
   text-transform: capitalize;
 }
 
-/* - Section Padding
---------------------------------------------------------------*/
+/* Section Padding */
 .padding-xsmall {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -975,8 +908,7 @@ h4.sub-title {
   padding-top: 0 !important;
 }
 
-/* - Section margin
---------------------------------------------------------------*/
+/* Section margin */
 .margin-small {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -1087,23 +1019,6 @@ blockquote cite {
 .pullquote-right {
   float: right;
   margin: 20px 0 20px 20px;
-}
-
-/*----------------------------------------------*/
-/* 4.2 Dropcap */
-/*----------------------------------------------*/
-.dropcap {
-  display: inline-block;
-  margin: 20px;
-  font-size: 4em;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
-  float: left;
-}
-.dropcap.colored {
-  color: #2bcaae;
 }
 
 /*----------------------------------------------*/
@@ -1266,163 +1181,6 @@ blockquote cite {
   display: block;
 }
 
-/** 5.2 Accordions
---------------------------------------------------------------*/
-.collapse:not(.show) {
-  display: none;
-}
-.collapsing {
-  height: 0;
-  overflow: hidden;
-  transition: height 0.35s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .collapsing {
-    transition: none;
-  }
-}
-.accordion-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 0;
-  font-size: 1rem;
-  color: var(--accent-color);
-  text-align: left;
-  background-color: var(--light-background-color);
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  overflow-anchor: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    border-radius 0.15s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .accordion-button {
-    transition: none;
-  }
-}
-.accordion-button:not(.collapsed) {
-  color: var(--accent-color);
-}
-.accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  transform: rotate(-180deg);
-}
-.accordion-button::after {
-  flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-left: auto;
-  content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-size: 1.25rem;
-  transition: transform 0.2s ease-in-out;
-}
-@media (prefers-reduced-motion: reduce) {
-  .accordion-button::after {
-    transition: none;
-  }
-}
-.accordion-button:hover {
-  z-index: 2;
-}
-.accordion-button:focus {
-  z-index: 3;
-  outline: 0;
-  box-shadow: none;
-}
-.accordion-header {
-  margin-bottom: 0;
-}
-.accordion-item {
-  background-color: var(--light-background-color);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-.accordion-body {
-  padding: 1rem 0;
-}
-.accordion-flush .accordion-collapse {
-  border-width: 0;
-}
-.accordion-flush .accordion-item {
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0;
-}
-.accordion-flush .accordion-item:first-child {
-  border-top: 0;
-}
-.accordion-flush .accordion-item:last-child {
-  border-bottom: 0;
-}
-.accordion-flush .accordion-item .accordion-button {
-  border-radius: 0;
-}
-
-/*====================================================================*/
-/* 6. BLOG STYLES */
-/*====================================================================*/
-
-/* 6.1 Blog Single Post
-------------------------------------------*/
-/* breadcrumbs */
-.breadcrumbs span {
-  display: inline-block;
-}
-
-/* 6.2 Blog Single Post
-------------------------------------------*/
-.sidebar .recent-post {
-  padding: 50px;
-}
-.sidebar .recent-post h3.widget-title {
-  margin: 0;
-}
-.sidebar .recent-post li {
-  line-height: 1.5;
-  margin: 0;
-  padding: 20px 0;
-  border-bottom: 1px solid #d6d4ce;
-  list-style: none;
-}
-
-/* 6.3 About Author
-------------------------------------------*/
-.author-post {
-  padding-left: 30px;
-}
-.author-post h4 {
-  font-weight: 500;
-  text-transform: none;
-}
-
-/* 6.4 Comments List
-------------------------------------------*/
-.comment-list .comment-item {
-  display: flex;
-}
-.comment-item .comment-meta {
-  display: flex;
-  align-items: baseline;
-}
-.comment-meta span.meta-date {
-  font-size: 13px;
-  padding: 10px;
-}
-.comments-wrap .child-comments {
-  padding-left: 50px;
-}
-
-/* 6.5 Comments Form
-------------------------------------------*/
-.comment-respond .comment-form {
-  display: flex;
-}
-
 /*----------------------------------------------*/
 /* 7. SITE STRUCTURE */
 /*----------------------------------------------*/
@@ -1538,10 +1296,7 @@ nav#navbar {
 .main-menu ul.menu-list a:hover {
   border-bottom: 3px solid #aea4bf;
 }
-header .btn-search {
-  padding: 0 20px;
-  cursor: pointer;
-}
+
 header .hamburger {
   display: none;
 }
